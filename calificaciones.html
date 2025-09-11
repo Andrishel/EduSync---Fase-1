@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSync - Calificaciones</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="tabla_estilos.css">
+</head>
+
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>EduSync</h4>
+        </div>
+
+        <div class="nav-item">
+            <a href="index.html" class="nav-link"> <i class="fas fa-home"></i>
+                <span>Escritorio</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="analiticas.html" class="nav-link"> <i class="fas fa-chart-bar"></i>
+                <span>Analíticas</span>
+            </a>
+        </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Gestión Académica</div>
+            <div class="nav-item">
+                <a href="estudiantes.html" class="nav-link"><i
+                        class="fas fa-user-graduate"></i><span>Estudiantes</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="docentes.html" class="nav-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Docentes</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="cursos.html" class="nav-link"><i class="fas fa-book"></i><span>Cursos</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="asistencias.html" class="nav-link"><i
+                        class="fas fa-calendar-check"></i><span>Asistencias</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="calificaciones.html" class="nav-link active"><i
+                        class="fas fa-star"></i><span>Calificaciones</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Trámites</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-file-alt"></i><span>Matrículas</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-sync-alt"></i><span>Actualización</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-certificate"></i><span>Certificados</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Comunicación</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-comments"></i><span>Mensajería</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-bullhorn"></i><span>Anuncios</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-envelope"></i><span>Correo</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">IA & Herramientas</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-robot"></i><span>Asistente IA</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-brain"></i><span>Análisis Predictivo</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-magic"></i><span>Generador de Contenido</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Recursos</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-book-open"></i><span>Biblioteca</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-calendar"></i><span>Planificador</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-folder"></i><span>Archivos</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Configuración</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-users"></i><span>Usuarios</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-cog"></i><span>Configuración</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-question-circle"></i><span>Ayuda</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <nav class="top-navbar">
+        </nav>
+
+        <div class="dashboard-content">
+            <div class="page-header-container">
+                <div class="page-header">
+                    <h1 class="page-title">Calificaciones y Evaluaciones</h1>
+                    <p class="text-muted">Acceso a consolidados y libretas de notas por aula.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header-custom">
+                    <div class="search-toolbar">
+                        <label for="search-table">Buscar por Aula o Tutor:</label>
+                        <input type="text" id="search-table" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table data-table">
+                            <thead>
+                                <tr>
+                                    <th>Aula <i class="fas fa-sort"></i></th>
+                                    <th>Tutor(a) <i class="fas fa-sort"></i></th>
+                                    <th class="text-center">Opciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1° A - Primaria</td>
+                                    <td>Vega Valdiviezo, Elizabeth</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1° C - Secundaria</td>
+                                    <td>Lazoriega Juarez, Arnold</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2° A - Primaria</td>
+                                    <td>Chininin Maza, Maritza Isabel</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2° B - Secundaria</td>
+                                    <td>Lazo Talledo, Shirley</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3° A - Primaria</td>
+                                    <td>Rojas Soto, Sebastián</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3° C - Secundaria</td>
+                                    <td>Sánchez Ramírez, Diego</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4° B - Primaria</td>
+                                    <td>Guzmán Silva, Leonardo</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5° A - Secundaria</td>
+                                    <td>Gonzales Sandoval, Blanca</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6° B - Primaria</td>
+                                    <td>Flores Mendoza, Mateo</td>
+                                    <td class="text-center actions-cell" style="justify-content: center;">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-file-excel me-1"></i>
+                                            Consolidado</button>
+                                        <button class="btn btn-info btn-sm text-white"><i
+                                                class="fas fa-book-open me-1"></i> Libretas</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination-container">
+                        <span class="pagination-info">Mostrando 1 a 3 de 43 Registros</span>
+                        <nav></nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
