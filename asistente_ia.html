@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSync - Asistente IA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="asistente_ia_estilos.css">
+</head>
+
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>EduSync</h4>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Dashboard</div>
+            <div class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Escritorio</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="analiticas.html" class="nav-link">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Analíticas</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Gestión Académica</div>
+            <div class="nav-item">
+                <a href="estudiantes.html" class="nav-link"><i
+                        class="fas fa-user-graduate"></i><span>Estudiantes</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="docentes.html" class="nav-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Docentes</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="cursos.html" class="nav-link"><i class="fas fa-book"></i><span>Cursos</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="asistencias.html" class="nav-link"><i
+                        class="fas fa-calendar-check"></i><span>Asistencias</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="calificaciones.html" class="nav-link"><i
+                        class="fas fa-star"></i><span>Calificaciones</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Trámites</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-file-alt"></i><span>Matrículas</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-sync-alt"></i><span>Actualización</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-certificate"></i><span>Certificados</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Comunicación</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-comments"></i><span>Mensajería</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-bullhorn"></i><span>Anuncios</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-envelope"></i><span>Correo</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">IA & Herramientas</div>
+            <div class="nav-item">
+                <a href="asistente_ia.html" class="nav-link active"><i class="fas fa-robot"></i><span>Asistente IA</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="analisis_predictivo.html" class="nav-link"><i class="fas fa-brain"></i><span>Análisis Predictivo</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="generador_contenido.html" class="nav-link"><i class="fas fa-magic"></i><span>Generador de Contenido</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Recursos</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-book-open"></i><span>Biblioteca</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-calendar"></i><span>Planificador</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-folder"></i><span>Archivos</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Configuración</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-users"></i><span>Usuarios</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-cog"></i><span>Configuración</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-question-circle"></i><span>Ayuda</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <nav class="top-navbar">
+        </nav>
+
+        <div class="dashboard-content">
+            <div class="page-header">
+                <h1 class="page-title">Asistente IA</h1>
+                <p class="text-muted">Tu copiloto para la gestión académica.</p>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h5>EduSync AI</h5>
+                    <span class="status-indicator">En línea</span>
+                </div>
+                <div class="chat-body" id="chat-body">
+                    <div class="chat-message ai">
+                        <div class="avatar">🤖</div>
+                        <div class="message-content">
+                            <p>¡Hola! Soy tu asistente de IA. Estoy aquí para ayudarte a analizar datos, generar
+                                reportes y responder tus consultas. ¿Qué necesitas hoy?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="prompt-suggestions" id="prompt-suggestions">
+                    <button class="prompt-btn">Resumir rendimiento del 5to grado</button>
+                    <button class="prompt-btn">Listar estudiantes con baja asistencia</button>
+                    <button class="prompt-btn">Redactar un comunicado para padres</button>
+                </div>
+                <div class="chat-footer">
+                    <textarea id="chat-input" placeholder="Escribe tu mensaje aquí..." rows="1"></textarea>
+                    <button id="send-btn" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+    <script src="asistente_ia_script.js"></script>
+</body>
+
+</html>

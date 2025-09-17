@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSync - Generador de Contenido</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="generador_contenido_estilos.css">
+</head>
+
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>EduSync</h4>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Dashboard</div>
+            <div class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Escritorio</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="analiticas.html" class="nav-link">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Analíticas</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Gestión Académica</div>
+            <div class="nav-item">
+                <a href="estudiantes.html" class="nav-link"><i
+                        class="fas fa-user-graduate"></i><span>Estudiantes</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="docentes.html" class="nav-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Docentes</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="cursos.html" class="nav-link"><i class="fas fa-book"></i><span>Cursos</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="asistencias.html" class="nav-link"><i
+                        class="fas fa-calendar-check"></i><span>Asistencias</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="calificaciones.html" class="nav-link"><i
+                        class="fas fa-star"></i><span>Calificaciones</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Trámites</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-file-alt"></i><span>Matrículas</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-sync-alt"></i><span>Actualización</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-certificate"></i><span>Certificados</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Comunicación</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-comments"></i><span>Mensajería</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-bullhorn"></i><span>Anuncios</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-envelope"></i><span>Correo</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">IA & Herramientas</div>
+            <div class="nav-item">
+                <a href="asistente_ia.html" class="nav-link"><i class="fas fa-robot"></i><span>Asistente IA</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="analisis_predictivo.html" class="nav-link"><i class="fas fa-brain"></i><span>Análisis
+                        Predictivo</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="generador_contenido.html" class="nav-link active"><i class="fas fa-magic"></i><span>Generador
+                        de Contenido</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Recursos</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-book-open"></i><span>Biblioteca</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-calendar"></i><span>Planificador</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-folder"></i><span>Archivos</span></a>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Configuración</div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-users"></i><span>Usuarios</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-cog"></i><span>Configuración</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-question-circle"></i><span>Ayuda</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <nav class="top-navbar">
+        </nav>
+
+        <div class="dashboard-content">
+            <div class="page-header">
+                <h1 class="page-title">Generador de Contenido</h1>
+                <p class="text-muted">Herramientas inteligentes para crear y programar tu material educativo.</p>
+            </div>
+
+            <div class="tools-grid">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-calendar-alt me-2"></i>Programa tu Material Semanal</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">Sube tus archivos y programa cuándo serán visibles para los
+                            estudiantes.</p>
+                        <div class="row g-3">
+                            <div class="col-md-6"><label class="form-label">Título de la Clase</label><input type="text"
+                                    class="form-control" placeholder="Ej: Introducción a la Fotosíntesis"></div>
+                            <div class="col-md-6"><label class="form-label">Curso Asociado</label><select
+                                    class="form-select">
+                                    <option>Seleccionar curso...</option>
+                                    <option>Ciencias - 6° Primaria</option>
+                                </select></div>
+                            <div class="col-12"><label class="form-label">Sube tu Archivo Principal</label><input
+                                    type="file" class="form-control"></div>
+                            <div class="col-md-6"><label class="form-label">Fecha de Publicación</label><input
+                                    type="date" class="form-control"></div>
+                            <div class="col-md-6"><label class="form-label">Hora de Publicación</label><input
+                                    type="time" class="form-control"></div>
+                            <div class="col-12"><button class="btn btn-primary w-100"><i
+                                        class="fas fa-clock me-2"></i>Programar Clase</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-file-signature me-2"></i>Crea una Nueva Evaluación</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">Diseña y configura tareas, cuestionarios o exámenes para tus cursos.
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-12"><label class="form-label">Título de la Evaluación</label><input
+                                    type="text" class="form-control" placeholder="Ej: Práctica Calificada N°3"></div>
+                            <div class="col-md-6"><label class="form-label">Tipo de Evaluación</label><select
+                                    class="form-select">
+                                    <option>Tarea para Entregar</option>
+                                    <option>Cuestionario en Línea</option>
+                                </select></div>
+                            <div class="col-md-6"><label class="form-label">Curso</label><select class="form-select">
+                                    <option>Seleccionar curso...</option>
+                                </select></div>
+                            <div class="col-md-6"><label class="form-label">Fecha de Inicio</label><input
+                                    type="datetime-local" class="form-control"></div>
+                            <div class="col-md-6"><label class="form-label">Fecha Límite de Entrega</label><input
+                                    type="datetime-local" class="form-control"></div>
+                            <div class="col-12"><button class="btn btn-success w-100"><i
+                                        class="fas fa-check me-2"></i>Crear y Publicar Evaluación</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card full-width-card">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-folder me-2"></i>Gestiona tus Archivos y Recursos</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">Tu biblioteca personal para subir, organizar y reutilizar tus
+                            materiales.</p>
+                        <div class="repository-actions">
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#uploadFileModal">
+                                <i class="fas fa-upload me-2"></i>Subir Nuevo Archivo
+                            </button>
+                            <input type="text" class="form-control" placeholder="Buscar en mis archivos...">
+                        </div>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i
+                                        class="fas fa-file-pdf text-danger me-2"></i> Silabo_Matematicas_2025.pdf</span>
+                                <div><button class="btn btn-sm btn-outline-primary">Usar</button><button
+                                        class="btn btn-sm btn-outline-danger ms-2">Eliminar</button></div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i
+                                        class="fas fa-file-powerpoint text-warning me-2"></i>
+                                    Clase_01_El_Cuerpo_Humano.pptx</span>
+                                <div><button class="btn btn-sm btn-outline-primary">Usar</button><button
+                                        class="btn btn-sm btn-outline-danger ms-2">Eliminar</button></div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i
+                                        class="fas fa-file-word text-info me-2"></i> Examen_Final_Historia.docx</span>
+                                <div><button class="btn btn-sm btn-outline-primary">Usar</button><button
+                                        class="btn btn-sm btn-outline-danger ms-2">Eliminar</button></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="uploadFileModal" tabindex="-1" aria-labelledby="uploadFileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="uploadFileModalLabel">Subir Nuevo Recurso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="fileInput" class="form-label">Seleccionar archivo</label>
+                        <input class="form-control" type="file" id="fileInput" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseSelect" class="form-label">Asociar al curso (opcional)</label>
+                        <select class="form-select" id="courseSelect">
+                            <option selected>Ninguno</option>
+                            <option value="1">Ciencias - 6° Primaria</option>
+                            <option value="2">Matemáticas - 5° Secundaria</option>
+                            <option value="3">Comunicación - 4° Secundaria</option>
+                            <option value="4">Historia - 1° Secundaria</option>
+                        </select>
+                    </div>
+                    <p class="text-muted small">El archivo se guardará en tu biblioteca. Si seleccionas un curso, será
+                        más fácil encontrarlo después.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Subir Archivo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

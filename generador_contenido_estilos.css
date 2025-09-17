@@ -1,0 +1,42 @@
+/* Estilos para la página del generador de contenido */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.tools-grid .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.tools-grid .card .card-body {
+    flex-grow: 1;
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Estilo para que la tercera tarjeta ocupe todo el ancho */
+.full-width-card {
+    grid-column: 1 / -1;
+}
+
+.repository-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.repository-actions .form-control {
+    max-width: 400px;
+}
